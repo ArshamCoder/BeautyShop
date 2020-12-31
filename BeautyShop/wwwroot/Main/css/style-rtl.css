@@ -52,14 +52,14 @@ body {
   font-style: normal;
   font-weight: 400;
   visibility: visible;
-  font-family: "Work Sans", sans-serif;
+  font-family: "iransanse", sans-serif;
   color: #333;
   direction: rtl; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 0;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "iransanse", sans-serif; }
 
 h1 {
   font-size: 48px;
@@ -332,6 +332,31 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: uppercase;
   font-size: 13px;
   border-radius: 3px; }
+
+@font-face {
+  font-family: 'iransanse';
+  font-weight: 300;
+  src: url("/Main/fonts/iransans/eot/IRANSansWeb(FaNum)_UltraLight.eot") format("embedded-opentype"), url("/Main/fonts/iransans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype"), url("/Main/fonts/iransans/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("/Main/fonts/iransans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'iransanse';
+  font-weight: 400;
+  src: url("/Main/fonts/iransans/eot/IRANSansWeb(FaNum)_Light.eot") format("embedded-opentype"), url("/Main/fonts/iransans/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype"), url("/Main/fonts/iransans/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("/Main/fonts/iransans/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'iransanse';
+  font-weight: 600;
+  src: url("/Main/fonts/iransans/eot/IRANSansWeb(FaNum).eot") format("embedded-opentype"), url("/Main/fonts/iransans/ttf/IRANSansWeb(FaNum).ttf") format("truetype"), url("/Main/fonts/iransans/woff/IRANSansWeb(FaNum).woff") format("woff"), url("/Main/fonts/iransans/woff2/IRANSansWeb(FaNum).woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'iransanse';
+  font-weight: 700;
+  src: url("/Main/fonts/iransans/eot/IRANSansWeb(FaNum)_Medium.eot") format("embedded-opentype"), url("/Main/fonts/iransans/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype"), url("/Main/fonts/iransans/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("/Main/fonts/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'iransanse';
+  font-weight: 800;
+  src: url("/Main/fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot") format("embedded-opentype"), url("/Main/fonts/iransans/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype"), url("/Main/fonts/iransans/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("/Main/fonts/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"); }
 
 /* 2. Home 1 Header css here */
 /* 01. header css here */
@@ -754,7 +779,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   justify-content: space-between; }
 
 .header_account_list {
-  margin-right: 40px;
+  margin-left: 40px;
   position: relative; }
   .header_account_list:last-child {
     margin-right: 0; }
@@ -823,7 +848,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: inline-block;
     position: absolute;
     top: -12px;
-    left: 25px; }
+    right: 25px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .header_account_list span.item_count {
         top: -12px;
@@ -950,7 +975,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       color: #d52121; }
     .main_menu nav > ul > li > a {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 24px;
       padding: 10px 30px;
       text-transform: capitalize;
@@ -964,7 +989,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         .main_menu nav > ul > li > a {
           padding: 5px 11px 5px 11px; } }
       .main_menu nav > ul > li > a i {
-        margin-left: 3px; }
+        margin-right: 3px;
+        position: relative;
+        top: 1px; }
       .main_menu nav > ul > li > a.active {
         color: #d52121; }
     .main_menu nav > ul > li ul.sub_menu {

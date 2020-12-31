@@ -1,7 +1,7 @@
-// Font Family
-$worksans: 'Work Sans', sans-serif;
+﻿// Font Family
+$worksans: 'iransanse', sans-serif;
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -13,20 +13,20 @@ $worksans: 'Work Sans', sans-serif;
 $fonts_color: #333;
 $primary_color: #999999;
 
-$fonts_color2:#757575;
-$fonts_color3:#919191;
+$fonts_color2: #757575;
+$fonts_color3: #919191;
 
-$fonts_color4:#888888;
-$fonts_color5:#a4a4a4;
+$fonts_color4: #888888;
+$fonts_color5: #a4a4a4;
 
-$fonts_color6:#3E444A;
-$fonts_color7:#808080;
+$fonts_color6: #3E444A;
+$fonts_color7: #808080;
 
-$fonts_color9:#a7a7a7;
-$fonts_color10:#222;
+$fonts_color9: #a7a7a7;
+$fonts_color10: #222;
 
-$fonts_color11:#2f2f2f;
-$fonts_color12:#ccc;
+$fonts_color11: #2f2f2f;
+$fonts_color12: #ccc;
 
 
 $secondary_color: #d52121;
@@ -53,7 +53,7 @@ $black: #000000;
 
 // Dark Color
 $grey_color: #ededed;
-$dark_grey:#e9e9e9;
+$dark_grey: #e9e9e9;
 
 // Light Color
 $light-grey: #f6fafb;
@@ -79,13 +79,12 @@ $heading-color-light: #505050;
 
 
 // Responsive Variables
-$extraBig-device : 'only screen and (min-w idth: 1600px)';
-$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1600px)';
-$mini-laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1300px)';
-$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
-$small-mobile3:'only screen and (min-width: 430px) and (max-width: 575px)';
-$large-mobile:'only screen and (max-width: 767px)';
+$extraBig-device: 'only screen and (min-w idth: 1600px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$mini-laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1300px)';
+$desktop-device: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$small-mobile3: 'only screen and (min-width: 430px) and (max-width: 575px)';
+$large-mobile: 'only screen and (max-width: 767px)';
 $small-mobile2: 'only screen and (max-width: 575px)';
 $small-mobile: 'only screen and (max-width: 479px)';
-
