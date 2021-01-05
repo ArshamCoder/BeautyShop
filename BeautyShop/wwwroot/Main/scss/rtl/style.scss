@@ -60,3 +60,12 @@
 @import 'section/newsletter-popup';
 @import 'section/404';
 @import 'section/privacy-policy';
+
+/*.dir-ltr {
+    direction: ltr;
+}
+*/
+
+.slider_section > div:first-child {
+    direction: ltr;
+}

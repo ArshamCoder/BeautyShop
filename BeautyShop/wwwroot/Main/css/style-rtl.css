@@ -710,7 +710,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   min-width: 150px;
   text-align: left;
   top: 100%;
-  left: 0;
+  right: 0;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   overflow: hidden;
@@ -885,7 +885,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .dropdown_search {
   position: absolute;
   top: 208%;
-  right: 0;
+  left: 0;
   z-index: 9;
   width: 370px;
   background: #fff;
@@ -1003,8 +1003,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       max-height: 0;
       -webkit-transform-origin: 0 0 0;
       transform-origin: 0 0 0;
-      left: 0;
-      right: auto;
+      right: 0;
+      left: auto;
       visibility: hidden;
       overflow: hidden;
       -webkit-transition: 0.5s;
@@ -1089,7 +1089,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 0 18px;
   background: #fff;
   z-index: 999;
-  right: 0;
+  left: 0;
   top: 208%;
   max-height: 0;
   visibility: hidden;
@@ -1122,7 +1122,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .cart_img {
   width: 95px;
-  margin-right: 10px; }
+  margin-left: 10px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .cart_img {
       width: 70px; } }
@@ -1131,7 +1131,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       width: 70px; } }
 
 .cart_info {
-  width: 63%; }
+  width: 63%;
+  text-align: right; }
   .cart_info a {
     font-weight: 400;
     font-size: 18px;
@@ -1147,7 +1148,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     .cart_info a:hover {
       color: #d52121; }
   .cart_info p {
-    font-size: 12px; }
+    font-size: 12px;
+    direction: ltr; }
     .cart_info p span {
       font-weight: 600; }
 
@@ -1190,8 +1192,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .cart_button a {
   text-transform: uppercase;
   border-radius: 3px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
   background: #eef0f1;
   display: block;
   text-align: center;
@@ -7740,3 +7742,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         margin-bottom: 12px; } }
 
 /*privacy policy css end*/
+/*.dir-ltr {
+    direction: ltr;
+}
+*/
+.slider_section > div:first-child {
+  direction: ltr; }
