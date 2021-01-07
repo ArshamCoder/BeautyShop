@@ -1,5 +1,12 @@
 ﻿/* 10. shop page css here */
 .shop_area {
+    .rowLng {
+        direction: ltr;
+
+        .colLng {
+            direction: rtl;
+        }
+    }
 }
 
 .canvas_padding {
