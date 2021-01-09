@@ -126,13 +126,14 @@
                 &.widget_sub_categories {
                     & > a {
                         position: relative;
+                        text-align: right;
 
                         &::before {
                             content: '+';
                             cursor: pointer;
                             font-size: 12px;
                             position: absolute;
-                            right: 21px;
+                            left: 21px;
                             top: 50%;
                             transform: translatey(-50%);
                         }
@@ -195,6 +196,7 @@
         font-weight: 500;
         line-height: 20px;
         border-bottom: 1px solid $grey_color;
+        text-align: right;
     }
 
     & > ul {
@@ -203,13 +205,14 @@
                 font-size: 14px;
                 display: block;
                 line-height: 30px;
+                text-align: right;
 
                 &:hover {
                     color: $secondary_color;
                 }
 
                 & span {
-                    float: right;
+                    float: left;
                 }
             }
         }
@@ -252,11 +255,16 @@
             background: none;
             border: none;
             font-size: 12px;
-            float: right;
+            float: left;
             text-align: right;
             line-height: 31px;
             width: 60px;
-
+            //start: Make input read only
+            /*-moz-user-select: none;
+                -ms-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;*/
+            //end: Make input read only
             @media #{$desktop-device } {
                 width: 65px;
             }
@@ -271,7 +279,7 @@
             background: $fonts_color;
             border: 0;
             border-radius: 30px;
-            float: left;
+            float: right;
             @include transition(.3s);
 
             &:hover {
@@ -283,6 +291,8 @@
 
 
 .tag_cloud {
+    text-align: right;
+
     & a {
         margin: 0 5px 12px 0;
         padding: 5px 15px;
@@ -610,6 +620,7 @@
 
     & .section_title {
         margin-bottom: 23px;
+        text-align: right;
 
         & h2 {
             font-size: 22px;
@@ -639,11 +650,11 @@
 
     & .product_content {
         width: calc(100% - 90px);
-        padding-left: 18px;
+        padding-right: 18px;
 
         @media #{$desktop-device} {
             width: calc(100% - 75px);
-            padding-left: 15px;
+            padding-right: 15px;
         }
 
         & h4 {
@@ -687,17 +698,17 @@
         background: inherit;
 
         &.btn-grid-3 {
-            background: url(../img/icon/bkg_grid.png) no-repeat scroll center center;
+            background: url(/Main/img/icon/bkg_grid.png) no-repeat scroll center center;
             width: 20px;
             height: 20px;
 
             &.active {
-                background: url(../img/icon/bkg_grid_hover.png) no-repeat scroll center center !important;
+                background: url(/Main/img/icon/bkg_grid_hover.png) no-repeat scroll center center !important;
             }
         }
 
         &.btn-grid-4 {
-            background: url(../img/icon/bkg_grid4.png) no-repeat scroll center center;
+            background: url(/Main/img/icon/bkg_grid4.png) no-repeat scroll center center;
             width: 26px;
             height: 22px;
 
@@ -710,17 +721,17 @@
             }
 
             &.active {
-                background: url(../img/icon/bkg_grid4_hover.png) no-repeat scroll center center !important;
+                background: url(/Main/img/icon/bkg_grid4_hover.png) no-repeat scroll center center !important;
             }
         }
 
         &.btn-list {
-            background: url(../img/icon/bkg_list.png) no-repeat scroll center center;
+            background: url(/Main/img/icon/bkg_list.png) no-repeat scroll center center;
             width: 20px;
             height: 20px;
 
             &.active {
-                background: url(../img/icon/bkg_list_hover.png) no-repeat scroll center center !important;
+                background: url(/Main/img/icon/bkg_list_hover.png) no-repeat scroll center center !important;
             }
         }
     }

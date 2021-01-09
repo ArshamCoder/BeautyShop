@@ -69,3 +69,18 @@
 .slider_section > div:first-child {
     direction: ltr;
 }
+
+.nice-select {
+    padding-right: 18px !important;
+    padding-left: 30px !important;
+
+    &:after {
+        right: unset !important;
+        left: 12px;
+    }
+
+    .list {
+        right: 0px;
+        left: auto;
+    }
+}
