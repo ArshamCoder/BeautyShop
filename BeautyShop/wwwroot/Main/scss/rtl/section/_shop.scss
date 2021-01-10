@@ -767,10 +767,10 @@
             & li {
                 margin-bottom: 0;
                 display: inline-block;
-                margin-right: 8px;
+                margin-left: 8px;
 
                 &:last-child {
-                    margin-right: 0;
+                    margin-left: 0;
                 }
             }
         }
@@ -803,10 +803,10 @@
 }
 
 .list_cart_btn {
-    margin-right: 30px;
+    margin-left: 30px;
 
     @media #{$large-mobile} {
-        margin-right: 18px;
+        margin-left: 18px;
     }
 
     & a {
@@ -836,7 +836,7 @@
     float: left;
     padding: 0;
     padding-left: 25px;
-    text-align: left;
+    text-align: right;
     margin-top: 0;
     display: block;
 
@@ -852,7 +852,7 @@
         flex-direction: column;
         flex: 0 0 100%;
         min-width: 100%;
-        padding-left: 0;
+        padding-right: 0;
     }
 
     & h4.product_name {
@@ -938,7 +938,7 @@
 
 .grid_list .product_thumb {
     border: 1px solid #e5e5e5;
-    float: left;
+    float: right;
     width: 33.33333%;
 
     @media #{$desktop-device} {

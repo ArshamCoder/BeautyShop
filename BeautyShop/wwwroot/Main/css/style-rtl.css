@@ -4088,9 +4088,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .grid_list .action_links ul li {
     margin-bottom: 0;
     display: inline-block;
-    margin-right: 8px; }
+    margin-left: 8px; }
     .grid_list .action_links ul li:last-child {
-      margin-right: 0; }
+      margin-left: 0; }
 
 .grid_list .list_action_wrapper .action_links {
   display: block; }
@@ -4109,10 +4109,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: block; }
 
 .list_cart_btn {
-  margin-right: 30px; }
+  margin-left: 30px; }
   @media only screen and (max-width: 767px) {
     .list_cart_btn {
-      margin-right: 18px; } }
+      margin-left: 18px; } }
   .list_cart_btn a {
     font-size: 18px;
     line-height: 22px;
@@ -4134,7 +4134,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   float: left;
   padding: 0;
   padding-left: 25px;
-  text-align: left;
+  text-align: right;
   margin-top: 0;
   display: block; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4148,7 +4148,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       flex-direction: column;
       flex: 0 0 100%;
       min-width: 100%;
-      padding-left: 0; } }
+      padding-right: 0; } }
   .grid_list .product_content.list_content h4.product_name {
     font-size: 24px;
     line-height: 24px;
@@ -4210,7 +4210,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .grid_list .product_thumb {
   border: 1px solid #e5e5e5;
-  float: left;
+  float: right;
   width: 33.33333%; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .grid_list .product_thumb {
@@ -5075,15 +5075,17 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         min-width: 180px; }
         .table_desc .cart_page table tbody tr td.product_quantity label {
           font-weight: 500;
-          margin-right: 5px; }
+          margin-left: 5px; }
         .table_desc .cart_page table tbody tr td.product_quantity input {
           width: 60px;
           height: 40px;
-          padding: 0 5px 0 10px;
+          padding: 0 10px 0 5px;
           background: none;
           border: 1px solid #ededed; }
       .table_desc .cart_page table tbody tr td .product_total {
         min-width: 120px; }
+  .table_desc .cart_submit {
+    text-align: left; }
 
 .cart_page table thead tr:last-child th, .table_desc table tbody tr td:last-child {
   border-right: 0; }
@@ -5113,7 +5115,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       background: #d52121; }
 
 .coupon_inner {
-  padding: 10px 20px 25px; }
+  padding: 10px 20px 25px;
+  text-align: right; }
+  .coupon_inner .checkout_btn {
+    text-align: left; }
   .coupon_inner p {
     font-size: 14px;
     margin-bottom: 20px; }
@@ -5139,7 +5144,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     height: 42px;
     background: none;
     padding: 0 20px;
-    margin-right: 20px;
+    margin-left: 20px;
     font-size: 12px;
     color: #333; }
     @media only screen and (max-width: 767px) {
@@ -5174,7 +5179,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     background: #333;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: right; }
     @media only screen and (max-width: 767px) {
       .coupon_code h3 {
         line-height: 28px;
@@ -5198,7 +5204,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         .cart_subtotal p.cart_amount {
           font-size: 14px; } }
     .cart_subtotal p span {
-      margin-right: 30px; }
+      margin-left: 30px;
+      float: right; }
 
 .checkout_btn {
   text-align: right; }
@@ -7815,3 +7822,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .nice-select .list {
     right: 0px;
     left: auto; }
+    .nice-select .list .option {
+      text-align: right;
+      padding-right: 18px !important;
+      padding-left: 29px !important; }
